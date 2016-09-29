@@ -1,0 +1,9 @@
+<tr>
+    <td class="fieldLabelArea">
+        UserName:
+    </td>
+    <td nowrap>
+        <input type="text" name="user" value="$!user"/>
+        <br><font size="1">Enter the userName to be set on the Test User CustomField</font>
+    </td>
+</tr>

@@ -1,0 +1,17 @@
+<tr>
+    <td class="fieldLabelArea">
+        Project Role:
+    </td>
+    <td nowrap>
+        <select name="role" id="role">
+        #foreach ($field in $roles)
+        	<option value="${field.id}"
+            #if ($role && (${field.id}==${role.id}))
+                SELECTED
+            #end
+            >$field.name</option>
+        #end
+        </select>
+        <br><font size="1">Select the role in which the user should be present!</font>
+    </td>
+</tr>

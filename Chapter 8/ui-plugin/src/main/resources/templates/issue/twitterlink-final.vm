@@ -1,0 +1,16 @@
+<p>
+    #renderIssueLinkIcon(${iconUrl} ${iconTooltip} ${iconTooltip} ${textutils})
+    <span title="${textutils.htmlEncode($tooltip)}">
+        <a href="${url}" class="link-title">${textutils.htmlEncode($title)}</a>
+    </span>
+    #if ($status) - 
+    <span title="Status: $status">
+    	<span class="status"><b>says:</b> "$status"</span>
+    </span>
+    #end
+    #if ($followers) ,  
+    <span title="Followers: $followers">
+    	<span class="followers"><b>Followers:</b> $followers</span>
+    </span>
+    #end
+</p>

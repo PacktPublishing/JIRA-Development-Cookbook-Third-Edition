@@ -1,0 +1,17 @@
+<tr>
+    <td class="fieldLabelArea">
+        Custom Fields:
+    </td>
+    <td nowrap>
+        <select name="field" id="field">
+        #foreach ($cf in $fields)
+        	<option value="$cf.name"
+            #if ($cf.name.equals($field))
+                SELECTED
+            #end
+            >$cf.name</option>
+        #end
+        </select>
+        <br><font size="1">Select the Custom Field to be validated for NULL</font>
+    </td>
+</tr>

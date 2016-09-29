@@ -1,0 +1,4 @@
+This form will execute the action and then redirect to the Dashboard<br><br>
+<form name="testForm" action="RedirectAction.jspa">
+	<input type="submit" value="Do something and go to Dashboard"/>
+</form>

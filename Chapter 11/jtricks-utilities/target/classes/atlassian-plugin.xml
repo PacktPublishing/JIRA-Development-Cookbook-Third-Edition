@@ -1,0 +1,94 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="jtricks-utilities"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="jtricks-utilities-resources" name="jtricks-utilities Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="jtricks-utilities.css" location="/css/jtricks-utilities.css"/>
+        <resource type="download" name="jtricks-utilities.js" location="/js/jtricks-utilities.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>jtricks-utilities</context>
+    </web-resource>
+    
+    <user-format key="twitter-format" name="Twitter User Format" class="com.jtricks.jira.user.TwitterUserFormat" system="true">
+		<description>User name linking to twitter</description>
+		<type>twitterLink</type>
+		<resource type="velocity" name="view" location="templates/user/twitterLink.vm"/>
+	</user-format>
+	
+	<servlet name="Test Servlet" key="jtricksServlet" class="com.jtricks.jira.servlet.JTricksServlet">
+		<description>Test Servlet</description>
+		<url-pattern>/myWebsite</url-pattern>
+		<init-param>
+            <param-name>siteName</param-name>
+            <param-value>Atlassian</param-value>
+        </init-param>
+        <init-param>
+            <param-name>siteAddress</param-name>
+            <param-value>http://www.atlassian.com/</param-value>
+        </init-param>
+	</servlet>
+	
+	<servlet-context-param key="jtricksContext">
+        <description>Shares this param!</description>
+        <param-name>sharedText</param-name>
+        <param-value>This is a shared Text</param-value>
+    </servlet-context-param>
+    
+    <servlet-filter name="Browse Issue Filter" key="jtricksServletFilter" class="com.jtricks.jira.servlet.JTricksServletFilter" location="before-dispatch" weight="200">
+        <description>Filter for Browse Issue</description>
+        <url-pattern>/*/myWebsite</url-pattern>
+        <init-param>
+            <param-name>filterName</param-name>
+            <param-value>JTricks Filter</param-value>
+        </init-param>
+    </servlet-filter>
+    
+    <servlet-context-listener name="Test Servlet Listener" key="jtricksServletListener" class="com.jtricks.jira.servlet.JTricksServletListener">
+        <description>Listener for Test Servlet</description>
+    </servlet-context-listener>
+    
+    <webwork1 key="redirect-key" name="Redirect Action" class="java.lang.Object">
+	    <actions>
+		<action name="com.jtricks.jira.webwork.RedirectAction" alias="RedirectAction">
+		    <view name="input">/templates/action/redirect.vm</view>
+		</action>
+	    </actions>
+	</webwork1>
+	
+	<webwork1 key="translate" name="Translate Action" class="java.lang.Object">
+	    <actions>
+		<action name="com.jtricks.jira.webwork.TranslateAction" alias="TranslateAction">
+		    <view name="input">/templates/action/translate.vm</view>
+		</action>
+	    </actions>
+	</webwork1>
+	
+	<webwork1 key="math" name="Math Action" class="java.lang.Object">
+	    <actions>
+		<action name="com.jtricks.jira.webwork.MathAction" alias="MathAction">
+		    <view name="input">/templates/action/math.vm</view>
+		</action>
+	    </actions>
+	</webwork1>
+	
+	<dictionary key="myUSEnglishDictionary" lang="us-english" class="com.jtricks.jira.dictionary.USDictionary" />
+	<dictionary key="myUKEnglishDictionary" lang="uk-english" class="com.jtricks.jira.dictionary.UKDictionary" />
+	
+	<servlet name="Dictionary Servlet" key="dictionaryServlet" class="com.jtricks.jira.dictionary.DictionaryServlet">
+	    <description>Dictionary Servlet</description>
+	    <url-pattern>/myDictionary</url-pattern>
+	</servlet>
+    
+</atlassian-plugin>

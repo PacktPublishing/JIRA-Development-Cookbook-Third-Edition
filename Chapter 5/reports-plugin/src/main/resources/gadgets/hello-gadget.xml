@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="__MSG_gadget.title__"
+                 title_url="__MSG_gadget.title.url__"
+                 description="__MSG_gadget.description__"
+                 author="Jobin Kuruvilla"
+		 		 author_email="author@gmail.com"
+                 screenshot='#staticResourceUrl("com.jtricks.reports-plugin:reports-plugin-resources", "screenshot.png")'
+                 thumbnail='#staticResourceUrl("com.jtricks.reports-plugin:reports-plugin-resources", "thumbnail.png")'
+		 		 height="150">
+        <Optional feature="gadget-directory">
+            <Param name="categories">
+                Other
+            </Param>
+        </Optional>
+	<Require feature="dynamic-height"/>
+	<Locale messages="__ATLASSIAN_BASE_URL__/download/resources/com.jtricks.reports-plugin/i18n/messages.xml"/>
+    </ModulePrefs>
+    <Content type="html" view="profile">
+        <![CDATA[
+
+	<script type="text/javascript" charset="utf-8">
+	    function resize(){
+			gadgets.window.adjustHeight();
+	    }
+		window.onload=resize;
+	</script>
+	Hello From JTricks
+
+        ]]>
+    </Content>
+</Module>
+

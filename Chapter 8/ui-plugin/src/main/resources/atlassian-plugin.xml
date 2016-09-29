@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}"
+	plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+		<param name="plugin-icon">images/pluginIcon.png</param>
+		<param name="plugin-logo">images/pluginLogo.png</param>
+	</plugin-info>
+
+	<!-- add our i18n resource -->
+	<resource type="i18n" name="i18n" location="ui-plugin" />
+
+	<!-- add our web resources -->
+	<web-resource key="ui-plugin-resources" name="ui-plugin Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+     	<dependency>com.atlassian.jira.jira-projects-plugin:subnavigator</dependency>
+		<resource type="download" name="ui-plugin.css" location="/css/ui-plugin.css" />
+		<resource type="download" name="ui-plugin.js" location="/js/ui-plugin.js" />
+		<resource type="download" name="images/" location="/images" />
+		<context>ui-plugin</context>
+		<context>atl.general</context>
+	</web-resource>
+
+	<!-- Web Section and Web Item demo -->
+	<web-section name="J-Tricks Section" i18n-name-key="j-tricks-section.name"
+		key="j-tricks-section" location="admin_plugins_menu" weight="1000">
+		<description key="j-tricks-section.description">The J-Tricks Section Plugin</description>
+		<label key="j-tricks-section.label" />
+	</web-section>
+	<web-item name="J-Tricks Link" i18n-name-key="j-tricks-link.name"
+		key="j-tricks-link" section="admin_plugins_menu/j-tricks-section"
+		weight="1000">
+		<description key="j-tricks-link.description">The J-Tricks Link Plugin</description>
+		<label key="j-tricks-link.label" />
+		<link linkId="j-tricks-link-link">http://www.j-tricks.com/</link>
+	</web-item>
+
+	<!-- Conditions on web items -->
+	<web-item key="jtricks-condition-menu" name="JTricks Condition Menu"
+		section="system.top.navigation.bar" weight="160">
+		<description>J Tricks Web site with condition</description>
+		<label>JTricks Conditional Menu</label>
+		<tooltip>J Tricks Web site</tooltip>
+		<link linkId="jtricks-condition-menu">http://www.j-tricks.com</link>
+		<condition class="com.jtricks.ui.conditions.DeveloperCondition" />
+	</web-item>
+
+	<!-- Contexts on web fragments -->
+	<web-section key="jtricks-admin-context-section" name="JTricks Context Section"
+		location="admin_plugins_menu" weight="910">
+		<label>$userName</label>
+		<context-provider class="com.jtricks.ui.context.UserContextProvider" />
+	</web-section>
+
+	<web-item key="jtricks-admin-context-link" name="JTricks Context Link"
+		section="admin_plugins_menu/jtricks-admin-context-section" weight="10">
+		<label>Website</label>
+		<link linkId="jtricks.admin.context.link">http://www.j-tricks.com</link>
+	</web-item>
+
+	<!-- Menu on top navigation bar -->
+	<web-item key="jtricks-menu" name="JTricks Menu" section="system.top.navigation.bar"
+		weight="150">
+		<description>J Tricks Web site</description>
+		<label>J Tricks</label>
+		<tooltip>J Tricks Web site</tooltip>
+		<link linkId="jtricks-menu">http://www.j-tricks.com</link>
+	</web-item>
+
+	<web-section key="jtricks-section" name="JTricks Dropdown"
+		location="jtricks-menu" weight="200"></web-section>
+
+	<web-item key="jtricks-item" name="Jtricks Item"
+		section="jtricks-menu/jtricks-section" weight="210">
+		<description>J Tricks Tutorials</description>
+		<label>J Tricks Tutorials</label>
+		<tooltip>Tutorials from J Tricks</tooltip>
+		<link linkId="jtricks.link">http://www.j-tricks.com/tutorials</link>
+	</web-item>
+
+	<!-- Simple link factory - favorites menu -->
+	<web-item key="favourites-menu" name="Favourites Menu" section="system.top.navigation.bar" weight="900">
+		<description>Favourites Menu</description>
+		<label>Favourites</label>
+		<tooltip>My Favourite Links</tooltip>
+		<link linkId="favourites-menu">http://www.j-tricks.com</link>
+	</web-item>
+
+	<web-section key="favourites-section" name="Favourites Dropdown" location="favourites-menu" weight="200">
+	</web-section>
+
+	<web-item-provider key="favourites-factory" name="Favourites Link Factory"
+		section="favourites-menu/favourites-section" class="com.jtricks.ui.links.FavouritesLinkProvider" />
+
+	<!-- Demo Action -->
+	<webwork1 key="j-tricks-demo-action" name="J-Tricks Demo Action"
+		i18n-name-key="j-tricks-demo-action.name">
+		<description key="j-tricks-demo-action.description">The J-Tricks Demo Action Plugin
+		</description>
+		<actions>
+			<action name="com.jtricks.jira.webwork.JTricksDemoAction"
+				alias="JTricksDemoAction">
+				<view name="input">/templates/j-tricks-demo-action/jtricksdemoaction/success.vm
+				</view>
+			</action>
+		</actions>
+	</webwork1>
+	
+	<!-- Issue Tab Panel -->
+	<issue-tabpanel key="jtricks-issue-tabpanel" i18n-name-key="issuetabpanel.jtricks.name" name="Issue Tab Panel" class="com.jtricks.ui.tabs.JTricksIssueTabPanel">
+  		<description>A sample Issue Tab Panel</description>
+  		<label>JTricks Panel</label>
+  		<resource type="velocity" name="view" location="templates/issue/issue-panel.vm" />
+  		<order>100</order>
+  		<sortable>true</sortable>
+	</issue-tabpanel>
+	
+	<!-- Project Tab Panel -->	
+	<project-tabpanel key="jtricks-project-panel" i18n-name-key="projectpanels.jtricks.name" name="Project Tab Panel" class="com.jtricks.ui.tabs.JTricksProjectTabPanel">
+  		<description>A sample Project Tab Panel</description>
+  		<label>JTricks Panel</label>
+  		<order>900</order>
+  		<resource type="velocity" name="view" location="templates/project/project-panel.vm" />
+	</project-tabpanel>
+	
+	<!-- Project Centric Link -->
+	<web-item key="jtricks-projectcentric-link" i18n-name-key="projectcentriclink.jtricks.name" section="jira.project.sidebar.plugins.navigation" weight="300">
+    	<label>JTricks Website</label>
+    	<link>http://www.j-tricks.com</link>
+    	<param name="iconClass" value="aui-icon aui-icon-small aui-iconfont-link"/>
+	</web-item>	
+	
+	<!-- Project Centric Panel -->
+	<web-item key="jtricks-projectcentric-panel" i18n-name-key="projectcentricpanel.jtricks.name" section="jira.project.sidebar.plugins.navigation" weight="310">
+    	<label>JTricks Web Panel</label>
+    	<link>/projects/$pathEncodedProjectKey?selectedItem=com.atlassian.jira.jira-projects-plugin:jtrickspanel</link>
+    	<param name="iconClass" value="aui-icon aui-icon-small aui-iconfont-file-code"/>
+	</web-item>
+ 
+	<web-panel key="jtricks-projectcentric-panel-key" location="com.atlassian.jira.jira-projects-plugin:jtrickspanel">
+    	<resource type="velocity" name="view" location="templates/project/project-panel.vm" />
+    	<context-provider class="com.jtricks.ui.tabs.context.ProjectPanelContextProvider"/>
+	</web-panel>
+	
+	<!-- Project Centric Panel with sub-navigation -->
+	<web-item key="jtricks-projectcentric-panel-navigation" i18n-name-key="projectcentricpanelnavigation.jtricks.name" section="jira.project.sidebar.plugins.navigation" weight="320">
+    	<label>JTricks Web Panel Navigation</label>
+    	<link>/projects/$pathEncodedProjectKey?selectedItem=com.atlassian.jira.jira-projects-plugin:jtricksnavigationpanel</link>
+    	<param name="iconClass" value="aui-icon aui-icon-small aui-iconfont-file-pdf"/>
+	</web-item>
+	
+	<web-panel key="jtricks-projectcentric-panel-keyall" location="com.atlassian.jira.jira-projects-plugin:jtricksnavigationpanel">
+    	<resource type="velocity" name="view" location="templates/project/project-navigation-panel.vm" />
+	</web-panel>
+ 
+	<web-panel key="jtricks-projectcentric-panel-key1" location="com.atlassian.jira.jira-projects-plugin:jtricksnavigationpanel1">
+    	<resource type="velocity" name="view" location="templates/project/project-navigation-panel1.vm" />
+	</web-panel>
+	
+	<web-panel key="jtricks-projectcentric-panel-key2" location="com.atlassian.jira.jira-projects-plugin:jtricksnavigationpanel2">
+    	<resource type="velocity" name="view" location="templates/project/project-navigation-panel2.vm" />
+	</web-panel>
+	
+	<!-- Link Renderer -->
+	<web-item key="remote-twitter-item" name="Twitter Link" section="operations-operations" weight="800">
+        <label>Create Twitter Link</label>
+       	<link linkId="remote-twitter.link">/secure/TwitterLink.jspa?key=$!{issue.key}</link>
+    </web-item>
+     
+    <webwork1 key="remote-twitter-action" name="Remote Twitter Action" class="java.lang.Object">
+   		<description>Action to create remote twitter link</description>
+		<actions>    
+    		<action name="com.jtricks.jira.webwork.TwitterLinkAction" alias="TwitterLink">
+		    </action>
+    	</actions>
+   </webwork1>
+
+	<issue-link-renderer key="twitterLinkRenderer" application-type="Twitter" class="com.jtricks.ui.renderer.TwitterLinkRenderer">
+    	<resource name="initial-view" type="velocity" location="templates/issue/twitterlink.vm"/>
+    	<resource name="final-view" type="velocity" location="templates/issue/twitterlink-final.vm"/>
+	</issue-link-renderer>
+	
+</atlassian-plugin>

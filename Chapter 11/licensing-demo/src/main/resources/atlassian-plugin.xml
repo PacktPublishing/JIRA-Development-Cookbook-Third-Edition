@@ -1,0 +1,33 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+        <param name="atlassian-licensing-enabled">true</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="licensing-demo"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="licensing-demo-resources" name="licensing-demo Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="licensing-demo.css" location="/css/licensing-demo.css"/>
+        <resource type="download" name="licensing-demo.js" location="/js/licensing-demo.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>licensing-demo</context>
+    </web-resource>
+    
+    <webwork1 key="licensing demo" name="Licensing Demo Action" class="java.lang.Object">
+	    <actions>
+		<action name="com.jtricks.jira.webwork.LicensingDemoAction" alias="LicensingDemoAction">
+		    <view name="input">/templates/action/licensing-demo.vm</view>
+		</action>
+	    </actions>
+	</webwork1>
+    
+</atlassian-plugin>

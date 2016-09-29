@@ -1,0 +1,8 @@
+#disable_html_escaping()
+#if ($username)
+    #set ($quote = '"')
+    #set($author = "<a id=${quote}assignee_$username)${quote} class=${quote}user-hover${quote} rel=${quote}$username${quote} href=${quote}https://twitter.com/${username}${quote}>$username</a>")
+#else
+    #set($author = $i18n.getText('common.words.anonymous'))
+#end
+${author}

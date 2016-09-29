@@ -1,0 +1,12 @@
+<table id="allissues-report-table" border="0" cellpadding="3" cellspacing="1" width="100%">
+   <tr class="rowNormal">
+	   <th>Key</th>
+	   <th>Summary</th>
+   </tr>
+   #foreach ($issue in $issues)
+   	 <tr class="rowNormal">
+   	   <td>$issue.key</td>
+   	   <td>$issue.summary</td>
+   	 </tr>
+   #end   
+</table>

@@ -1,0 +1,7 @@
+<h1>
+	<span id="panel-subnav-header"></span>
+	<span id="panel-subnav-trigger"></span>
+</h1>
+<span id="panel-subnav-content"></span>
+<br>
+Please select a panel from the dropdown to see how the sub-navigation works!

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>J-Tricks Configuration</title>
+		<meta name="decorator" content="atl.general" />
+	</head>
+	<body>
+		<div class="aui-page-panel">
+			<div class="aui-page-panel-inner">
+				<section class="aui-page-panel-content">
+					<h2>My Input Form</h2><br>
+					<form class="aui" method="POST" action="$requestContext.baseUrl/secure/DemoAction.jspa">
+						<div class="form-body">
+							<div class="field-group">
+						        <label for="userName">Name
+						            <span class="aui-icon icon-required">(required)</span></label>
+						        <input class="text medium-field" type="text"
+						               id="userName" name="userName" placeholder="Enter a name">
+						        <div class="description">Please provide a name. Leave it blank to see error page</div>
+						    </div>
+						    <input type="hidden" name="atl_token" value="$atl_token" />
+						</div>
+						<div class="buttons-container form-footer">
+					    	<button class="aui-button aui-button-primary">Submit</button>
+					    </div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>  

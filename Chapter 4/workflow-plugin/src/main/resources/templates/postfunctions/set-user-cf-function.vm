@@ -1,0 +1,3 @@
+#if ($user)
+	The <b>Test User</b> CF will be set with value : <b>$user</b>
+#end

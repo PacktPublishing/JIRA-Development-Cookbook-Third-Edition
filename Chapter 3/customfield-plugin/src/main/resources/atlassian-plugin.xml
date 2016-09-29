@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="customfield-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="customfield-plugin-resources" name="customfield-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="customfield-plugin.css" location="/css/customfield-plugin.css"/>
+    <resource type="download" name="customfield-plugin.js" location="/js/customfield-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>customfield-plugin</context>
+  </web-resource>
+  
+  <!-- <component-import key="customFieldValuePersister" interface="com.atlassian.jira.issue.customfields.persistence.CustomFieldValuePersister"/> -->
+  
+  <customfield-type name="Read Only User CF" i18n-name-key="read-only-user-cf.name" key="read-only-user-cf" class="com.jtricks.jira.customfields.ReadOnlyUserCF">
+    <description key="read-only-user-cf.description">Read only custom field to store the name of the last edited user</description>
+    <resource name="view" type="velocity" location="templates/com/jtricks/view-readonly-user.vm"/>
+    <resource name="column-view" type="velocity" location="templates/com/jtricks/view-readonly-user.vm"/>
+    <resource name="xml" type="velocity" location="templates/com/jtricks/view-readonly-user.vm"/>
+    <resource name="edit" type="velocity" location="templates/com/jtricks/edit-readonly-user.vm"/>
+    <valid-searcher package="com.atlassian.jira.plugin.system.customfieldtypes" key="textsearcher"/>
+  </customfield-type>
+  
+  <servlet name="J Tricks Servlet" i18n-name-key="j-tricks-servlet.name" key="j-tricks-servlet" class="com.jtricks.jira.servlet.JTricksServlet">
+    <description key="j-tricks-servlet.description">The J Tricks Servlet Plugin</description>
+    <url-pattern>/jtricksfields</url-pattern>
+  </servlet>
+  
+  <servlet name="J Tricks Option Servlet" i18n-name-key="j-tricks-option-servlet.name" key="j-tricks-option-servlet" class="com.jtricks.jira.servlet.JTricksOptionServlet">
+    <description key="j-tricks-option-servlet.description">The J Tricks Option Servlet Plugin</description>
+    <url-pattern>/jtricksoptions</url-pattern>
+  </servlet>
+</atlassian-plugin>

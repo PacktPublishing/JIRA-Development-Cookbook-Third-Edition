@@ -1,0 +1,63 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="issue-manager"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="issue-manager-resources" name="issue-manager Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="issue-manager.css" location="/css/issue-manager.css"/>
+        <resource type="download" name="issue-manager.js" location="/js/issue-manager.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>issue-manager</context>
+    </web-resource>
+    
+    <servlet name="Issue Servlet" key="issueManager" class="com.jtricks.jira.servlet.IssueManagerServlet">
+		<description>Creates,Edits Issues</description>
+		<url-pattern>/issueManager</url-pattern>
+	</servlet>
+	
+	<servlet name="Attachment Servlet" key="attachmentManager" class="com.jtricks.jira.servlet.AttachmentManagerServlet">
+		<description>Creates Issues and attaches files to it</description>
+		<url-pattern>/attachmentManager</url-pattern>
+	</servlet>
+	
+	<servlet name="Worklog Servlet" key="worklogManager" class="com.jtricks.jira.servlet.WorklogManagerServlet">
+		<description>Creates Issues and logs work on it</description>
+		<url-pattern>/worklogManager</url-pattern>
+	</servlet>
+	
+	<servlet name="Comment Servlet" key="commentManager" class="com.jtricks.jira.servlet.CommentManagerServlet">
+		<description>Creates Issues and comments on it</description>
+		<url-pattern>/commentManager</url-pattern>
+	</servlet>
+	
+	<servlet name="Link Servlet" key="linkManager" class="com.jtricks.jira.servlet.LinkManagerServlet">
+		<description>Creates Issues and links it</description>
+		<url-pattern>/linkManager</url-pattern>
+	</servlet>
+	
+	<servlet name="Changelog Servlet" key="changelogManager" class="com.jtricks.jira.servlet.ChangeLogManagerServlet">
+		<description>Creates Issues and adds change log</description>
+		<url-pattern>/changeLogManager</url-pattern>
+	</servlet>
+	
+	<web-item name="Manage Project" i18n-name-key="manage-project.name" key="manage-project" section="operations-operations" weight="100">
+	    <description key="manage-project.description">Manages the project in which the issue belongs</description>
+	    <label key="manage-project.label"></label>
+	    <link linkId="manage-project-link">/plugins/servlet/project-config/${issue.project.key}</link>
+	    <condition class="com.jtricks.jira.webfragment.conditions.UserCondition"/>
+    </web-item>
+    
+    <component-import key="permissionManager" interface="com.atlassian.jira.security.PermissionManager" />
+    
+</atlassian-plugin>

@@ -1,0 +1,55 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="db-utilities"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="db-utilities-resources" name="db-utilities Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="db-utilities.css" location="/css/db-utilities.css"/>
+        <resource type="download" name="db-utilities.js" location="/js/db-utilities.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>db-utilities</context>
+    </web-resource>
+    
+    <servlet name="OfBizDelegator Servlet" key="delegatorServlet" class="com.jtricks.jira.servlet.DelegatorServlet">
+		<description>Creates,Edits. Reads Generic entities</description>
+		<url-pattern>/ofbizdelegator</url-pattern>
+	</servlet>
+	
+	<servlet name="PropetySet Servlet" key="propertySetServlet" class="com.jtricks.jira.servlet.PropertySetServlet">
+		<description>Uses PropertySet to store and retrieve data</description>
+		<url-pattern>/propertyset</url-pattern>
+	</servlet>
+	
+	<ao key="ao-module">
+         <description>The configuration of the Active Objects service</description>
+         <entity>com.jtricks.entity.AddressEntity</entity>
+	</ao>
+	
+	<web-item key="active-objects-item" name="ActiveObjects Link" section="system.user.options/jira-help" weight="900">
+	    <description>ActiveObjects Example</description>
+	    <label>ActiveObjects Example</label>
+	    <tooltip>ActiveObjects Example</tooltip>
+	    <link linkId="active-objects-link">/secure/ManageActiveObjects.jspa</link>
+	</web-item>
+	
+	<webwork1 key="active-objects-actions" name="Active Objects Actions" class="java.lang.Object">
+		<actions>
+			<action	name="com.jtricks.web.action.ManageActiveObjects" alias="ManageActiveObjects">
+					<view name="success">/templates/success.vm</view>
+			</action>
+		</actions>
+	</webwork1>
+	
+    
+</atlassian-plugin>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="jql-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="jql-plugin-resources" name="jql-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="jql-plugin.css" location="/css/jql-plugin.css"/>
+    <resource type="download" name="jql-plugin.js" location="/js/jql-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>jql-plugin</context>
+  </web-resource>
+  
+  <jql-function name="Projects Function" i18n-name-key="projects-function.name" key="projects-function" class="com.jtricks.jira.jql.ProjectsFunction">
+  	<description key="projects-function.description">The Projects Function Plugin</description>
+    <!--The name of the function-->
+	<fname>projects</fname>
+	<!--Whether this function returns a list or a single value-->
+	<list>true</list>
+  </jql-function>
+  
+  <search-request-view key="simple-searchrequest-html" name="Simple HTML View"
+                         class="com.jtricks.jira.search.SimpleSearchRequestHTMLView" state='enabled'
+                         fileExtension="html" contentType="text/html">
+	<resource type="velocity" name="header" location="templates/searchrequest-html-header.vm"/>
+	<resource type="velocity" name="body" location="templates/searchrequest-html-body.vm"/>
+	<resource type="velocity" name="footer" location="templates/searchrequest-html-footer.vm"/>
+	<order>200</order>
+  </search-request-view>
+  
+  <single-issue-view key="issue-html" name="HTML" class="com.jtricks.jira.search.IssueHTMLView" state='enabled' fileExtension="html" contentType="text/html">
+        <resource type="velocity" name="body" location="templates/single-html-view.vm" />
+        <resource type="velocity" name="header" location="templates/single-html-header.vm" />
+        <resource type="velocity" name="footer" location="templates/single-html-footer.vm" />
+        <order>100</order>
+    </single-issue-view>
+  
+  <search-request-view key="searchrequest-html" name="HTML View" class="com.jtricks.jira.search.SearchRequestHTMLView" state='enabled'
+                         fileExtension="html" contentType="text/html">
+	<resource type="velocity" name="header" location="templates/searchrequest-html-header.vm"/>
+	<resource type="velocity" name="footer" location="templates/searchrequest-html-footer.vm"/>
+	<order>200</order>
+  </search-request-view>
+  
+  <servlet name="J Tricks Search Servlet" key="j-tricks-search-servlet" class="com.jtricks.jira.servlet.JTricksSearchServlet">
+    <description key="j-tricks-search-servlet.description">The J Tricks Search Servlet Plugin</description>
+    <url-pattern>/jtrickssearch</url-pattern>
+  </servlet>
+  
+  <servlet name="J Tricks Filter Servlet" key="j-tricks-filter-servlet" class="com.jtricks.jira.servlet.JTricksFilterServlet">
+    <description key="j-tricks-filter-servlet.description">The J Tricks Filter Servlet Plugin</description>
+    <url-pattern>/jtricksfilter</url-pattern>
+  </servlet>
+  
+  <index-document-configuration entity-key="IssueProperty" key="jira-issue-property-indexing">
+  	<key property-key="color">
+    	<extract path="name" type="string" />
+    	<extract path="density" type="number" alias="colorDensity"/>
+  	</key>
+  </index-document-configuration>
+</atlassian-plugin>

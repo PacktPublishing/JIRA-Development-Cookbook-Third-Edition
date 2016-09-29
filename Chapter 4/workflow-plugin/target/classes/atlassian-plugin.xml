@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="workflow-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="workflow-plugin-resources" name="workflow-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="workflow-plugin.css" location="/css/workflow-plugin.css"/>
+    <resource type="download" name="workflow-plugin.js" location="/js/workflow-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>workflow-plugin</context>
+  </web-resource>
+  
+  <workflow-condition key="role-condition" name="Role Based Condition" i18n-name-key="role-condition.name" class="com.jtricks.jira.workflow.RoleConditionFactory">
+    <description key="role-condition.description">Role Based Workflow Condition</description>
+    <condition-class>com.jtricks.jira.workflow.RoleCondition</condition-class>
+    <resource type="velocity" name="view" location="templates/conditions/role-condition.vm"/>
+    <resource type="velocity" name="input-parameters" location="templates/conditions/role-condition-input.vm"/>
+    <resource type="velocity" name="edit-parameters" location="templates/conditions/role-condition-input.vm"/>
+  </workflow-condition>
+  
+  <workflow-validator key="field-validator" name="Field Validator" i18n-name-key="field-validator.name" class="com.jtricks.jira.workflow.FieldValidatorFactory">
+    <description key="field-validator.description">Field Not Empty Workflow Validator</description>
+    <validator-class>com.jtricks.jira.workflow.FieldValidator</validator-class>
+    <resource type="velocity" name="view" location="templates/validators/field-validator.vm"/>
+    <resource type="velocity" name="input-parameters" location="templates/validators/field-validator-input.vm"/>
+    <resource type="velocity" name="edit-parameters" location="templates/validators/field-validator-input.vm"/>
+  </workflow-validator>
+  
+  <workflow-function key="set-user-cf-function" name="Set User CF Function" i18n-name-key="set-user-cf-function.name" class="com.jtricks.jira.workflow.SetUserCFFunctionFactory">
+    <description key="set-user-cf-function.description">Set Defined User or Current User</description>
+    <function-class>com.jtricks.jira.workflow.SetUserCFFunction</function-class>
+    <orderable>true</orderable>
+    <unique>true</unique>
+    <deletable>true</deletable>
+    <resource type="velocity" name="view" location="templates/postfunctions/set-user-cf-function.vm"/>
+    <resource type="velocity" name="input-parameters" location="templates/postfunctions/set-user-cf-function-input.vm"/>
+    <resource type="velocity" name="edit-parameters" location="templates/postfunctions/set-user-cf-function-input.vm"/>
+  </workflow-function>
+</atlassian-plugin>

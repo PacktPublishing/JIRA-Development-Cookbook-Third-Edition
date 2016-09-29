@@ -1,0 +1,4 @@
+<tr>
+	<td>$!issue.summary</td>
+	<td>, Reported by <b>$!issue.reporter.displayName</b></td>
+</tr>

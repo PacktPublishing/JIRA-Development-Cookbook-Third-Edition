@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <meta name="decorator" content="atl.general"/>
+    <title>Sharing code</title>
+    </head>
+    <body class="aui-page-focused aui-page-size-large">
+    <div id="page">
+      <section id="content" role="main">
+        <div class="aui-page-panel">
+		    <div class="aui-page-panel-inner">
+		        <section class="aui-page-panel-content">
+		            #if ($licensed)
+		            	<div class="aui-message aui-message-success">
+						    <p class="title">
+						        <strong>Valid License</strong>
+						    </p>
+						    <p>The plugin license is valid.</p>
+						</div>
+		            #else
+		            	<div class="aui-message aui-message-error">
+						    <p class="title">
+						        <strong>Invalid License</strong>
+						    </p>
+						    <p>$!licenseError</p>
+						</div>
+		            #end
+		        </section>
+		    </div>
+		</div>
+      </section>
+    </div>
+    </body>
+</html>

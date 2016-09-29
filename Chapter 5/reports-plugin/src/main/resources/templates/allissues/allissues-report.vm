@@ -1,0 +1,17 @@
+#disable_html_escaping()
+<table class="aui">
+	<thead>
+        <tr>
+            <th id="key">Key</th>
+            <th id="summary">Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+    	#foreach ($issue in $issues)
+    	<tr>
+    		<td headers="key"><a href="/browse/$issue.key">$issue.key</a></td>
+            <td headers="summary">$issue.summary</td>
+        </tr>
+    	#end
+    </tbody>
+</table>

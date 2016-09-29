@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <meta name="decorator" content="atl.general"/>
+    <title>Sharing code</title>
+    </head>
+    <body class="aui-page-focused aui-page-size-large">
+    <div id="page">
+      <section id="content" role="main">
+        <div class="aui-page-panel">
+		    <div class="aui-page-panel-inner">
+		        <section class="aui-page-panel-content">
+		            <h2>Sum</h2>
+		            <p>2 + 3 = $!sum</p>
+		        </section>
+		    </div>
+		</div>
+      </section>
+    </div>
+    </body>
+</html>

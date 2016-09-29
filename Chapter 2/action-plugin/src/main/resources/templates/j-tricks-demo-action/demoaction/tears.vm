@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>J-Tricks Configuration</title>
+		<meta name="decorator" content="atl.general" />
+	</head>
+	<body>
+		<div class="aui-page-panel">
+			<div class="aui-page-panel-inner">
+				<section class="aui-page-panel-content">
+					<h2>Oh No, Error!</h2><br>
+					Please specify a user name!
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

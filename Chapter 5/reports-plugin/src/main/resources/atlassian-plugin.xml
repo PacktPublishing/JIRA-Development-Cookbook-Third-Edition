@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="reports-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="reports-plugin-resources" name="reports-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="reports-plugin.css" location="/css/reports-plugin.css"/>
+    <resource type="download" name="reports-plugin.js" location="/js/reports-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>reports-plugin</context>
+  </web-resource>
+  
+  <!-- REPORTS -->
+  <report name="All Issues Report" i18n-name-key="all-issues-report.name" key="all-issues-report" class="com.jtricks.jira.reports.AllIssuesReport">
+    <description key="all-issues-report.description">This report shows details of all isses a specific project</description>
+    <resource name="view" type="velocity" location="templates/allissues/allissues-report.vm"/>
+    <resource name="excel" type="velocity" location="templates/allissues/allissues-report-excel.vm"/>
+    <label key="all-issues-report.label"></label>
+    <!-- the properties of this report which the user must select before running it -->
+    <properties>
+        <property>
+            <key>projectId</key>
+            <name>report.allissues.project.name</name>
+            <description>report.allissues.project.description</description>
+            <type>select</type>
+            <values class="com.jtricks.jira.reports.ProjectValuesGenerator"/>
+        </property>
+        <!-- <property>
+                <key>testString</key>
+                <name>Test String</name>
+                <description>Example String property</description>
+                <type>string</type>
+                <default>test default</default>
+         </property>
+         <property>
+                <key>testLong</key>
+                <name>Test Long</name>
+                <description>Example Long property</description>
+                <type>long</type>
+                <default>50</default>
+         </property>
+         <property>
+                <key>testHidden</key>
+                <name>Test Hidden</name>
+                <description>Example Hidden property</description>
+                <type>hidden</type>
+                <default>test hidden val</default>
+         </property>
+         <property>
+                <key>testDate</key>
+                <name>Test Date</name>
+                <description>Example Date property</description>
+                <type>date</type>
+         </property>
+         <property>
+                <key>testUser</key>
+                <name>Test User</name>
+                <description>Example User property</description>
+                <type>user</type>
+         </property>
+         <property>
+                <key>testGroup</key>
+                <name>Test Group</name>
+                <description>Example Group property</description>
+                <type>group</type>
+         </property>
+         <property>
+                <key>testText</key>
+                <name>Test Text</name>
+                <description>Example Text property</description>
+                <type>text</type>
+         </property>
+         <property>
+		    <key>testMultiSelect</key>
+		    <name>Test Multi Select</name>
+		    <description>Example Multi Select Property</description>
+		    <type>multiselect</type>
+		    <values class="com.jtricks.jira.reports.ProjectValuesGenerator"/>
+		</property>
+		<property>
+		    <key>testCheckBox</key>
+		    <name>Test CheckBox</name>
+		    <description>Example CheckBox Property</description>
+		    <type>checkbox</type>
+		</property>
+		<property>
+		    <key>testFilterPicker</key>
+		    <name>Test Filter Picker</name>
+		    <description>Example Filter Picker Property</description>
+		    <type>filterpicker</type>
+		</property>
+		<property>
+		    <key>testFilterProjectPicker</key>
+		    <name>Test Filter And Project Picker</name>
+		    <description>Example Filter And Project Picker Property</description>
+		    <type>filterprojectpicker</type>
+		</property>
+		<property>
+		    <key>testSelect</key>
+		    <name>Test Select</name>
+		    <description>Example Select Property</description>
+		    <type>select</type>
+		    <values>
+			    <value>
+			        <key>key1</key>
+			        <value>Key 1</value>
+			    </value>
+			    <value>
+			        <key>key2</key>
+			        <value>Key 2</value>
+			    </value>
+			    <value>
+			        <key>key3</key>
+			        <value>Key 3</value>
+			    </value>
+		    </values>
+		</property>
+		<property>
+			<key>testCascadingSelect</key>
+			<name>Test Cascading Select</name>
+            <description>Example Cascading Select</description>
+           	<type>cascadingselect</type>
+            <values class="com.jtricks.jira.reports.CascadingValuesGenerator"/>
+            <cascade-from>testSelect</cascade-from>
+       	</property> -->
+    </properties>
+  </report>
+  
+  <!-- GADGETS -->
+  
+  <gadget key="hello-gadget" name="Hello Gadget" location="gadgets/hello-gadget.xml">
+	<description>Hello Gadget!</description>
+  </gadget>
+  
+  <gadget key="hello-user-gadget" name="Hello User Gadget" location="gadgets/hello-user-gadget.xml">
+	<description>Displays user name in the gadget</description>
+  </gadget>
+
+  <resource type="download" name="i18n/messages.xml" location="i18n/messages.xml">
+  	<param name="content-type" value="text/xml; charset=UTF-8"/>
+  </resource>
+</atlassian-plugin>

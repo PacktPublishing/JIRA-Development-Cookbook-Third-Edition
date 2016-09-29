@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="rest-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="rest-plugin-resources" name="rest-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="rest-plugin.css" location="/css/rest-plugin.css"/>
+    <resource type="download" name="rest-plugin.js" location="/js/rest-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>rest-plugin</context>
+  </web-resource>
+  
+  <rest name="Category Resource" i18n-name-key="category-resource.name" key="category-resource" path="/jtricks" version="1.0">
+    <description key="category-resource.description">The Category Resource Plugin</description>
+  </rest>
+</atlassian-plugin>

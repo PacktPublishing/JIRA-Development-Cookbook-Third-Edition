@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>J-Tricks Demo</title>
+		<meta name="decorator" content="atl.admin" />
+		<meta name="admin.active.section" content="admin_plugins_menu/j-tricks-section" />
+		<meta name="admin.active.tab" content="j-tricks-link-link">
+    </head>
+    <body>
+		<div class="aui-page-panel">
+		    <div class="aui-page-panel-inner">
+		        <section class="aui-page-panel-content">
+		            <h2>JTricks Demo</h2>
+		            <p>How is the look and feel?</p>
+		        </section>
+		    </div>
+		</div>
+    </body>
+</html> 

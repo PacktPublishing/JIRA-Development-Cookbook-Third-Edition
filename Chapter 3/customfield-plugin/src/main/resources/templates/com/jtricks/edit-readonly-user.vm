@@ -1,0 +1,4 @@
+#disable_html_escaping()
+#customControlHeader ($action $customField.id $customField.name $fieldLayoutItem.required $displayParameters $auiparams)
+	<input class="text" id="$customField.id" name="$customField.id" type="text" value="$!currentUser" readonly="readonly"/>
+#customControlFooter ($action $customField.id $fieldLayoutItem.fieldDescription $displayParameters $auiparams)

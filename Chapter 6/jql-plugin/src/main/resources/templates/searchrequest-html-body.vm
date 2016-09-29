@@ -1,0 +1,4 @@
+<tr>
+	<td><font color="green">$!issue.key</font></td>
+	<td>$!issue.summary</td>
+</tr>

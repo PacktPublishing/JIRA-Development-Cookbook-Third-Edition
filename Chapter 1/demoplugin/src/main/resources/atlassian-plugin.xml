@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="demoplugin"/>
+  <!-- add our web resources -->
+  <web-resource key="demoplugin-resources" name="demoplugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="demoplugin.css" location="/css/demoplugin.css"/>
+    <resource type="download" name="demoplugin.js" location="/js/demoplugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>demoplugin</context>
+  </web-resource>
+  <web-item name="My Web Item" i18n-name-key="my-web-item.name" key="my-web-item" section="system.user.options/personal" weight="1000">
+    <description key="my-web-item.description">The My Web Item Plugin</description>
+    <label key="my-web-item.label"></label>
+    <link linkId="my-web-item-link">http://www.j-tricks.com</link>
+  </web-item>
+</atlassian-plugin>

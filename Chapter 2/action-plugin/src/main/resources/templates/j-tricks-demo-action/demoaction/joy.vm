@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>J-Tricks Configuration</title>
+		<meta name="decorator" content="atl.general" />
+	</head>
+	<body>	
+		<div class="aui-page-panel">
+			<div class="aui-page-panel-inner">
+				<section class="aui-page-panel-content">
+					<h2>Output</h2><br>
+					<font color="green">$modifiedName</font>
+				</section>
+			</div>
+		</div>
+	</body>
+</html> 

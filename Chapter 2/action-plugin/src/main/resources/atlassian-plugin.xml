@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="action-plugin"/>
+  
+  <!-- add our web resources -->
+  <web-resource key="action-plugin-resources" name="action-plugin Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="action-plugin.css" location="/css/action-plugin.css"/>
+    <resource type="download" name="action-plugin.js" location="/js/action-plugin.js"/>
+    <resource type="download" name="images/" location="/images"/>
+    <context>action-plugin</context>
+  </web-resource>
+  
+  <webwork1 key="j-tricks-demo-action" name="JTricks Demo Action" i18n-name-key="j-tricks-demo-action.name">
+    <description key="j-tricks-demo-action.description">Demo Action to showcase webwork plugin module</description>
+    <actions>
+      <action name="com.jtricks.jira.webwork.DemoAction" alias="DemoAction">
+        <view name="success">/templates/j-tricks-demo-action/demoaction/joy.vm</view>
+        <view name="input">/templates/j-tricks-demo-action/demoaction/input.vm</view>
+        <view name="error">/templates/j-tricks-demo-action/demoaction/tears.vm</view>
+      </action>
+    </actions>
+  </webwork1>
+</atlassian-plugin>

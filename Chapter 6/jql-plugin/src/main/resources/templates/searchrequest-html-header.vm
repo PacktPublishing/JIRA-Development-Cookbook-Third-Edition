@@ -1,0 +1,7 @@
+Hello $user , Have a look at the search results!<br><br>
+#set($displayName = 'Anonymous')
+#if($filtername)
+    #set($displayName = $textutils.htmlEncode($filtername))
+#end
+<b>Filter</b> : $displayName <br><br>
+<table>

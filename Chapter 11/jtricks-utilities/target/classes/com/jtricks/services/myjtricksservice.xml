@@ -1,0 +1,10 @@
+<someservice id="jtricksserviceid">
+  <description>My New Service</description>
+  <properties>
+    <property>
+      <key>Tutorial</key>
+      <name>The tutorial you like</name>
+      <type>string</type>
+    </property>
+  </properties>
+</someservice>

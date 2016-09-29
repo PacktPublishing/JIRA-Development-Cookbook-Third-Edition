@@ -1,0 +1,3 @@
+<tr>
+	<td colspan="2"><i>#if($!issue.assignee) Currently assigned to <b>$!issue.assignee.displayName</b> #else Currently unassigned #end</i></td>
+</tr>

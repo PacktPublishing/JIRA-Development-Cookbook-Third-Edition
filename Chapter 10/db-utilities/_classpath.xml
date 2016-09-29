@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/mail/javax.mail-api/1.5.4/javax.mail-api-1.5.4.jar" sourcepath="M2_REPO/javax/mail/javax.mail-api/1.5.4/javax.mail-api-1.5.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/javax/mail/javax.mail-api/1.5.4/javax.mail-api-1.5.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar" sourcepath="M2_REPO/javax/activation/activation/1.1/activation-1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" sourcepath="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/bind/jaxb-api/2.2/jaxb-api-2.2.jar" sourcepath="M2_REPO/javax/xml/bind/jaxb-api/2.2/jaxb-api-2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" sourcepath="M2_REPO/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" sourcepath="M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/jira/jira-api/7.1.2/jira-api-7.1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/annotations/atlassian-annotations/0.16/atlassian-annotations-0.16.jar" sourcepath="M2_REPO/com/atlassian/annotations/atlassian-annotations/0.16/atlassian-annotations-0.16-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/annotations/atlassian-annotations/0.16/atlassian-annotations-0.16-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/ofbiz/entityengine-share/1.2.3/entityengine-share-1.2.3.jar" sourcepath="M2_REPO/com/atlassian/ofbiz/entityengine-share/1.2.3/entityengine-share-1.2.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/ofbiz/entityengine-share/1.2.3/entityengine-share-1.2.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.4.0/xercesImpl-2.4.0.jar" sourcepath="M2_REPO/xerces/xercesImpl/2.4.0/xercesImpl-2.4.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/ofbiz/entityengine/1.2.3/entityengine-1.2.3.jar" sourcepath="M2_REPO/com/atlassian/ofbiz/entityengine/1.2.3/entityengine-1.2.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/ofbiz/entityengine/1.2.3/entityengine-1.2.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/jta/jta/1.0.1/jta-1.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/collectors/atlassian-collectors-util/0.10/atlassian-collectors-util-0.10.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/collectors/atlassian-collectors-util/0.10/atlassian-collectors-util-0.10-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/opensymphony/webwork/1.4-atlassian-30/webwork-1.4-atlassian-30.jar" sourcepath="M2_REPO/opensymphony/webwork/1.4-atlassian-30/webwork-1.4-atlassian-30-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/opensymphony/webwork/1.4-atlassian-30/webwork-1.4-atlassian-30-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/html/atlassian-html-encoder/1.4/atlassian-html-encoder-1.4.jar" sourcepath="M2_REPO/com/atlassian/html/atlassian-html-encoder/1.4/atlassian-html-encoder-1.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/html/atlassian-html-encoder/1.4/atlassian-html-encoder-1.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/webwork/pell-multipart-request/1.31.0/pell-multipart-request-1.31.0.jar" sourcepath="M2_REPO/webwork/pell-multipart-request/1.31.0/pell-multipart-request-1.31.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/core/atlassian-core/5.0.6/atlassian-core-5.0.6.jar" sourcepath="M2_REPO/com/atlassian/core/atlassian-core/5.0.6/atlassian-core-5.0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/core/atlassian-core/5.0.6/atlassian-core-5.0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="M2_REPO/com/google/guava/guava/18.0/guava-18.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/google/guava/guava/18.0/guava-18.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.1/commons-collections-3.1.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/opensymphony/propertyset/1.5/propertyset-1.5.jar" sourcepath="M2_REPO/opensymphony/propertyset/1.5/propertyset-1.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/dom4j/dom4j/1.4/dom4j-1.4.jar" sourcepath="M2_REPO/dom4j/dom4j/1.4/dom4j-1.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" sourcepath="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jaxen/jaxen/1.0-FCS/jaxen-1.0-FCS.jar" sourcepath="M2_REPO/jaxen/jaxen/1.0-FCS/jaxen-1.0-FCS-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/jaxen/jaxen/1.0-FCS/jaxen-1.0-FCS-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/saxpath/saxpath/1.0-FCS/saxpath-1.0-FCS.jar" sourcepath="M2_REPO/saxpath/saxpath/1.0-FCS/saxpath-1.0-FCS-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/saxpath/saxpath/1.0-FCS/saxpath-1.0-FCS-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/msv/msv/20020414/msv-20020414.jar" sourcepath="M2_REPO/msv/msv/20020414/msv-20020414-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/relaxngDatatype/relaxngDatatype/20020414/relaxngDatatype-20020414.jar" sourcepath="M2_REPO/relaxngDatatype/relaxngDatatype/20020414/relaxngDatatype-20020414-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/isorelax/isorelax/20020414/isorelax-20020414.jar" sourcepath="M2_REPO/isorelax/isorelax/20020414/isorelax-20020414-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/image/atlassian-image-consumer/1.0.1/atlassian-image-consumer-1.0.1.jar" sourcepath="M2_REPO/com/atlassian/image/atlassian-image-consumer/1.0.1/atlassian-image-consumer-1.0.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/image/atlassian-image-consumer/1.0.1/atlassian-image-consumer-1.0.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/slf4j/slf4j-api/1.7.9/slf4j-api-1.7.9-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/core/atlassian-core-user/5.0.6/atlassian-core-user-5.0.6.jar" sourcepath="M2_REPO/com/atlassian/core/atlassian-core-user/5.0.6/atlassian-core-user-5.0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/core/atlassian-core-user/5.0.6/atlassian-core-user-5.0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/core/atlassian-core-thumbnail/5.0.6/atlassian-core-thumbnail-5.0.6.jar" sourcepath="M2_REPO/com/atlassian/core/atlassian-core-thumbnail/5.0.6/atlassian-core-thumbnail-5.0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/core/atlassian-core-thumbnail/5.0.6/atlassian-core-thumbnail-5.0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/imageio/imageio-jpeg/3.2/imageio-jpeg-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/imageio/imageio-jpeg/3.2/imageio-jpeg-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/imageio/imageio-jpeg/3.2/imageio-jpeg-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/imageio/imageio-core/3.2/imageio-core-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/imageio/imageio-core/3.2/imageio-core-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/imageio/imageio-core/3.2/imageio-core-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/common/common-lang/3.2/common-lang-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/common/common-lang/3.2/common-lang-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/common/common-lang/3.2/common-lang-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/common/common-io/3.2/common-io-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/common/common-io/3.2/common-io-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/common/common-io/3.2/common-io-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/common/common-image/3.2/common-image-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/common/common-image/3.2/common-image-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/common/common-image/3.2/common-image-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/imageio/imageio-metadata/3.2/imageio-metadata-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/imageio/imageio-metadata/3.2/imageio-metadata-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/imageio/imageio-metadata/3.2/imageio-metadata-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/twelvemonkeys/imageio/imageio-tiff/3.2/imageio-tiff-3.2.jar" sourcepath="M2_REPO/com/twelvemonkeys/imageio/imageio-tiff/3.2/imageio-tiff-3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/twelvemonkeys/imageio/imageio-tiff/3.2/imageio-tiff-3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/extras/atlassian-extras/3.1.2/atlassian-extras-3.1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.16/log4j-1.2.16.jar" sourcepath="M2_REPO/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.3/commons-codec-1.3.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.3/commons-codec-1.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/velocity/atlassian-velocity/1.3/atlassian-velocity-1.3.jar" sourcepath="M2_REPO/com/atlassian/velocity/atlassian-velocity/1.3/atlassian-velocity-1.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/velocity/atlassian-velocity/1.3/atlassian-velocity-1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/opensymphony/oscore/2.2.7/oscore-2.2.7.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/velocity/velocity/1.6.4/velocity-1.6.4.jar" sourcepath="M2_REPO/org/apache/velocity/velocity/1.6.4/velocity-1.6.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/apache/velocity/velocity/1.6.4/velocity-1.6.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/oro/oro/2.0.7/oro-2.0.7.jar" sourcepath="M2_REPO/oro/oro/2.0.7/oro-2.0.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/osworkflow/osworkflow/2.8.1/osworkflow-2.8.1.jar" sourcepath="M2_REPO/osworkflow/osworkflow/2.8.1/osworkflow-2.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/cache/atlassian-cache-api/2.11.1/atlassian-cache-api-2.11.1.jar" sourcepath="M2_REPO/com/atlassian/cache/atlassian-cache-api/2.11.1/atlassian-cache-api-2.11.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/cache/atlassian-cache-api/2.11.1/atlassian-cache-api-2.11.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/util/concurrent/atlassian-util-concurrent/0.0.12/atlassian-util-concurrent-0.0.12.jar" sourcepath="M2_REPO/com/atlassian/util/concurrent/atlassian-util-concurrent/0.0.12/atlassian-util-concurrent-0.0.12-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/util/concurrent/atlassian-util-concurrent/0.0.12/atlassian-util-concurrent-0.0.12-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/instrumentation/atlassian-instrumentation-core/2.2.1/atlassian-instrumentation-core-2.2.1.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/instrumentation/atlassian-instrumentation-core/2.2.1/atlassian-instrumentation-core-2.2.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/beehive/beehive-api/0.2/beehive-api-0.2.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/beehive/beehive-api/0.2/beehive-api-0.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/tenancy/atlassian-tenancy-api/1.4.0/atlassian-tenancy-api-1.4.0.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/tenancy/atlassian-tenancy-api/1.4.0/atlassian-tenancy-api-1.4.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/event/atlassian-event/2.3.2/atlassian-event-2.3.2.jar" sourcepath="M2_REPO/com/atlassian/event/atlassian-event/2.3.2/atlassian-event-2.3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/event/atlassian-event/2.3.2/atlassian-event-2.3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/fugue/fugue/2.6.0/fugue-2.6.0.jar" sourcepath="M2_REPO/com/atlassian/fugue/fugue/2.6.0/fugue-2.6.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/fugue/fugue/2.6.0/fugue-2.6.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/crowd/embedded-crowd-api/2.8.3/embedded-crowd-api-2.8.3.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/crowd/embedded-crowd-api/2.8.3/embedded-crowd-api-2.8.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.1/jackson-core-asl-1.9.1.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.1/jackson-core-asl-1.9.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.1/jackson-mapper-asl-1.9.1.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.1/jackson-mapper-asl-1.9.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/mail/javax.mail/1.5.4/javax.mail-1.5.4.jar" sourcepath="M2_REPO/com/sun/mail/javax.mail/1.5.4/javax.mail-1.5.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/sun/mail/javax.mail/1.5.4/javax.mail-1.5.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/mail/atlassian-mail/2.5.16/atlassian-mail-2.5.16.jar" sourcepath="M2_REPO/com/atlassian/mail/atlassian-mail/2.5.16/atlassian-mail-2.5.16-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/mail/atlassian-mail/2.5.16/atlassian-mail-2.5.16-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.6.1/commons-beanutils-1.6.1.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.6.1/commons-beanutils-1.6.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-beanutils/commons-beanutils/1.6.1/commons-beanutils-1.6.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-digester/commons-digester/1.4.1/commons-digester-1.4.1.jar" sourcepath="M2_REPO/commons-digester/commons-digester/1.4.1/commons-digester-1.4.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-digester/commons-digester/1.4.1/commons-digester-1.4.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar" sourcepath="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar" sourcepath="M2_REPO/org/jsoup/jsoup/1.8.3/jsoup-1.8.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/atlassian-localhost/1.1.0/atlassian-localhost-1.1.0.jar" sourcepath="M2_REPO/com/atlassian/atlassian-localhost/1.1.0/atlassian-localhost-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/atlassian-localhost/1.1.0/atlassian-localhost-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/threadlocal/atlassian-threadlocal/1.3/atlassian-threadlocal-1.3.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/threadlocal/atlassian-threadlocal/1.3/atlassian-threadlocal-1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6.jar" sourcepath="M2_REPO/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/velocity/htmlsafe/velocity-htmlsafe/1.4/velocity-htmlsafe-1.4.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/velocity/htmlsafe/velocity-htmlsafe/1.4/velocity-htmlsafe-1.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar" sourcepath="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-api/4.1.0-m002/atlassian-plugins-api-4.1.0-m002.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-api/4.1.0-m002/atlassian-plugins-api-4.1.0-m002-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-api/4.1.0-m002/atlassian-plugins-api-4.1.0-m002-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-webfragment/4.1.0/atlassian-plugins-webfragment-4.1.0.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-webfragment/4.1.0/atlassian-plugins-webfragment-4.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-webfragment/4.1.0/atlassian-plugins-webfragment-4.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/ozymandias/atlassian-plugin-point-safety/0.10/atlassian-plugin-point-safety-0.10.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/ozymandias/atlassian-plugin-point-safety/0.10/atlassian-plugin-point-safety-0.10-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/jfree/jfreechart/1.0.13/jfreechart-1.0.13.jar" sourcepath="M2_REPO/jfree/jfreechart/1.0.13/jfreechart-1.0.13-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-webresource/3.5.9/atlassian-plugins-webresource-3.5.9.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-webresource/3.5.9/atlassian-plugins-webresource-3.5.9-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-webresource/3.5.9/atlassian-plugins-webresource-3.5.9-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-webresource-api/3.5.9/atlassian-plugins-webresource-api-3.5.9.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-webresource-api/3.5.9/atlassian-plugins-webresource-api-3.5.9-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-webresource-api/3.5.9/atlassian-plugins-webresource-api-3.5.9-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/tuckey/urlrewritefilter/4.0.4/urlrewritefilter-4.0.4.jar" sourcepath="M2_REPO/org/tuckey/urlrewritefilter/4.0.4/urlrewritefilter-4.0.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/tuckey/urlrewritefilter/4.0.4/urlrewritefilter-4.0.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/sourcemap/sourcemap/1.7.5/sourcemap-1.7.5.jar" sourcepath="M2_REPO/com/atlassian/sourcemap/sourcemap/1.7.5/sourcemap-1.7.5-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/sourcemap/sourcemap/1.7.5/sourcemap-1.7.5-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1.jar" sourcepath="M2_REPO/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/jfree/jcommon/1.0.8/jcommon-1.0.8.jar" sourcepath="M2_REPO/jfree/jcommon/1.0.8/jcommon-1.0.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/sal/sal-api/3.0.3/sal-api-3.0.3.jar" sourcepath="M2_REPO/com/atlassian/sal/sal-api/3.0.3/sal-api-3.0.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/sal/sal-api/3.0.3/sal-api-3.0.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/gadgets/atlassian-gadgets-api/4.1.0/atlassian-gadgets-api-4.1.0.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/gadgets/atlassian-gadgets-api/4.1.0/atlassian-gadgets-api-4.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/johnson/atlassian-johnson-core/3.0.0/atlassian-johnson-core-3.0.0.jar" sourcepath="M2_REPO/com/atlassian/johnson/atlassian-johnson-core/3.0.0/atlassian-johnson-core-3.0.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/johnson/atlassian-johnson-core/3.0.0/atlassian-johnson-core-3.0.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-servlet/3.2.8/atlassian-plugins-servlet-3.2.8.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-servlet/3.2.8/atlassian-plugins-servlet-3.2.8-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-servlet/3.2.8/atlassian-plugins-servlet-3.2.8-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar" sourcepath="M2_REPO/joda-time/joda-time/2.8.2/joda-time-2.8.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/joda-time/joda-time/2.8.2/joda-time-2.8.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-httpclient/commons-httpclient/3.1-atlassian-2/commons-httpclient-3.1-atlassian-2.jar" sourcepath="M2_REPO/commons-httpclient/commons-httpclient/3.1-atlassian-2/commons-httpclient-3.1-atlassian-2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/commons-httpclient/commons-httpclient/3.1-atlassian-2/commons-httpclient-3.1-atlassian-2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/profiling/atlassian-profiling/1.9/atlassian-profiling-1.9.jar" sourcepath="M2_REPO/com/atlassian/profiling/atlassian-profiling/1.9/atlassian-profiling-1.9-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/profiling/atlassian-profiling/1.9/atlassian-profiling-1.9-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/scheduler/atlassian-scheduler-api/1.7.0/atlassian-scheduler-api-1.7.0.jar" sourcepath="M2_REPO/com/atlassian/scheduler/atlassian-scheduler-api/1.7.0/atlassian-scheduler-api-1.7.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/scheduler/atlassian-scheduler-api/1.7.0/atlassian-scheduler-api-1.7.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/analytics/analytics-api/5.0.10/analytics-api-5.0.10.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/analytics/analytics-api/5.0.10/analytics-api-5.0.10-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/application/atlassian-application-api/1.2/atlassian-application-api-1.2.jar" sourcepath="M2_REPO/com/atlassian/application/atlassian-application-api/1.2/atlassian-application-api-1.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/application/atlassian-application-api/1.2/atlassian-application-api-1.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.10/junit-4.10.jar" sourcepath="M2_REPO/junit/junit/4.10/junit-4.10-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/junit/junit/4.10/junit-4.10-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" sourcepath="M2_REPO/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.6/atlassian-spring-scanner-annotation-1.2.6.jar" sourcepath="M2_REPO/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.6/atlassian-spring-scanner-annotation-1.2.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.6/atlassian-spring-scanner-annotation-1.2.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.6/atlassian-spring-scanner-runtime-1.2.6.jar" sourcepath="M2_REPO/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.6/atlassian-spring-scanner-runtime-1.2.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.6/atlassian-spring-scanner-runtime-1.2.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/activeobjects/activeobjects-plugin/1.1.0/activeobjects-plugin-1.1.0.jar" sourcepath="M2_REPO/com/atlassian/activeobjects/activeobjects-plugin/1.1.0/activeobjects-plugin-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/activeobjects/activeobjects-plugin/1.1.0/activeobjects-plugin-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/net/java/dev/activeobjects/activeobjects/1.1.0/activeobjects-1.1.0.jar" sourcepath="M2_REPO/net/java/dev/activeobjects/activeobjects/1.1.0/activeobjects-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/net/java/dev/activeobjects/activeobjects/1.1.0/activeobjects-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/activeobjects/activeobjects-core/1.1.0/activeobjects-core-1.1.0.jar" sourcepath="M2_REPO/com/atlassian/activeobjects/activeobjects-core/1.1.0/activeobjects-core-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/activeobjects/activeobjects-core/1.1.0/activeobjects-core-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/activeobjects/activeobjects-spi/1.1.0/activeobjects-spi-1.1.0.jar" sourcepath="M2_REPO/com/atlassian/activeobjects/activeobjects-spi/1.1.0/activeobjects-spi-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/activeobjects/activeobjects-spi/1.1.0/activeobjects-spi-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/activeobjects/activeobjects-dbex/1.1.0/activeobjects-dbex-1.1.0.jar" sourcepath="M2_REPO/com/atlassian/activeobjects/activeobjects-dbex/1.1.0/activeobjects-dbex-1.1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/activeobjects/activeobjects-dbex/1.1.0/activeobjects-dbex-1.1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.1.0/woodstox-core-asl-4.1.0.jar" sourcepath="M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.1.0/woodstox-core-asl-4.1.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/woodstox/stax2-api/3.1.0/stax2-api-3.1.0.jar" sourcepath="M2_REPO/org/codehaus/woodstox/stax2-api/3.1.0/stax2-api-3.1.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3.jar" sourcepath="M2_REPO/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/wink/wink-client/1.1.3-incubating/wink-client-1.1.3-incubating.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/wink/wink-common/1.1.3-incubating/wink-common-1.1.3-incubating.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/xml/bind/jaxb-impl/2.2.1.1/jaxb-impl-2.2.1.1.jar" sourcepath="M2_REPO/com/sun/xml/bind/jaxb-impl/2.2.1.1/jaxb-impl-2.2.1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0.jar" sourcepath="M2_REPO/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/atlassian/upm/upm-api/2.15/upm-api-2.15.jar" sourcepath="M2_REPO/com/atlassian/upm/upm-api/2.15/upm-api-2.15-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jobinkk/.m2/repository/com/atlassian/upm/upm-api/2.15/upm-api-2.15-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+</classpath>

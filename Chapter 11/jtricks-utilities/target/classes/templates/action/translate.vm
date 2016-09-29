@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <meta name="decorator" content="atl.general"/>
+    <title>$i18n.getText("welcome.demo.heading")</title>
+    </head>
+    <body class="aui-page-focused aui-page-size-large">
+    <div id="page">
+      <section id="content" role="main">
+        <div class="aui-page-panel">
+		    <div class="aui-page-panel-inner">
+		        <section class="aui-page-panel-content">
+		            <h2>$i18n.getText("welcome.demo.heading")</h2>
+		            <p>$i18n.getText("welcome.demo.message")</p>
+		        </section>
+		    </div>
+		</div>
+      </section>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="__MSG_gadget.user.title__"
+                 title_url="__MSG_gadget.user.title.url__"
+                 description="__MSG_gadget.user.description__"
+                 author="Jobin Kuruvilla"
+		 		 author_email="author@gmail.com"
+                 screenshot='#staticResourceUrl("com.jtricks.reports-plugin:reports-plugin-resources", "screenshot.png")'
+                 thumbnail='#staticResourceUrl("com.jtricks.reports-plugin:reports-plugin-resources", "thumbnail.png")'
+		 		 height="150"
+                 >
+        <Optional feature="gadget-directory">
+            <Param name="categories">
+                Other
+            </Param>
+        </Optional>
+        <Require feature="oauthpopup" />
+		<Require feature="dynamic-height"/>
+		<Require feature="setprefs" />
+        <Require feature="views" />
+        #supportedLocales("gadget.common")
+		<Locale messages="__ATLASSIAN_BASE_URL__/download/resources/com.jtricks.reports-plugin/i18n/messages.xml"/>
+    </ModulePrefs>
+    <UserPref name="isConfigured" datatype="hidden" default_value="false"/>
+	<UserPref name="refresh" datatype="hidden" default_value="false"/>
+	<UserPref name="displayName" datatype="hidden" default_value="true"/>
+    <Content type="html" view="profile">
+        <![CDATA[
+        #requireResource("com.atlassian.jira.gadgets:common")
+	    #includeResources()
+	 
+	    <script type="text/javascript">
+		(function () {
+		    var gadget = AJS.Gadget({
+		        baseUrl: "__ATLASSIAN_BASE_URL__",
+				config: {
+                        descriptor: function (args) {
+                            var gadget = this;
+                            return  {
+                                fields: [
+                                    {
+                                        userpref: "displayName",
+                                        label: gadget.getMsg("property.label"),
+                                        description:gadget.getMsg("property.description"),
+                                        type: "select",
+                                        selected: gadget.getPref("displayName"),
+                                        options:[
+                                            {
+                                                label:"Yes",
+                                                value:"true"
+                                            },
+                                            {
+                                                label:"No",
+                                                value:"false"
+                                            }
+                                        ]
+                                    },
+                                    AJS.gadget.fields.nowConfigured()
+                                ]
+                            };
+                        }
+                    },
+		        view: {
+				enableReload: true,
+                onResizeAdjustHeight: true,
+				template: function(args) {
+					var gadget = this;
+			 
+					if (gadget.getPref("displayName") == "true")
+					{
+						var userDetails = AJS.$("<h1/>").text("Hello, "+args.user["fullName"]);
+					} else {
+						var userDetails = AJS.$("<h1/>").text("Hello!");
+					}	
+			 
+					gadget.getView().html(userDetails);
+				    },
+				    args: [{
+					key: "user",
+					ajaxOptions: function() {
+					    return {
+						url: "/rest/gadget/1.0/currentUser"
+					    };
+					}
+				    }]
+			}
+		    });
+		})();
+	    </script>
+        ]]>
+    </Content>
+</Module>
+
