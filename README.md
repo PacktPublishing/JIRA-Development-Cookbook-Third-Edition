@@ -1,9 +1,8 @@
-#JIRA Development Cookbook - Third Edition
+# JIRA Development Cookbook - Third Edition
+
 This is the code repository for [JIRA Development Cookbook - Third Edition](https://www.packtpub.com/application-development/jira-7-development-cookbook-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785885617), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 ##Instructions and Navigations
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
-
-
 
 The code will look like the following:
 ```
@@ -34,11 +33,14 @@ An IDE of your choice. The examples in the book use Eclipse.
 A database supported by JIRA. The examples in the book use H2DB, which
 comes with standalone JIRA.
 
-##Related Products
+## Related Products
+
 * [JIRA 7 Administration Cookbook - Second Edition](https://www.packtpub.com/application-development/jira-7-administration-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785888441)
 
 * [JIRA Essentials - Third Edition](https://www.packtpub.com/application-development/jira-essentials-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781784398125)
 
 * [JIRA 7 Administration Cookbook - Second Edition](https://www.packtpub.com/application-development/jira-7-administration-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785888441)
-###Suggestions and Feedback
+
+## Suggestions and Feedback
+
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
