@@ -2,7 +2,7 @@
 
 This is the code repository for [JIRA Development Cookbook - Third Edition](https://www.packtpub.com/application-development/jira-7-development-cookbook-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785885617), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
-##Instructions and Navigations
+## Instructions and Navigations
 
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
 
